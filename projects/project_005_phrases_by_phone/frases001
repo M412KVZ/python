@@ -1,0 +1,5 @@
+import pywhatkit as kit
+import random
+lines = open("textos.txt").read().splitlines()
+linea = random.chioce(lines)
+kit.sendwhatmsg_instantly("+525585994089",linea,10)

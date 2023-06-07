@@ -1,0 +1,19 @@
+# Una variable es un espacio en memoria donde se guardan y recupweran los datos que utiliza un programa que utiliza un programa.
+
+# Cada variable debe tener un nombre se podra identificar y referirse a ella, durante el desaroolo de un programa.
+
+# En Python, el nombre de una variable no puede coincidir con los nombres de los comandos asigndos a este lenguaje de programacion, ademas de que no debera contener espacios en blanco.
+
+# Una variable no puede llamarse "print", llamarse "nom bre"
+
+# En Python los dosmtipos de variables mas comunes son: 
+	las que almacenan numeros 123456
+	las que almacenan texto abfgshjdj
+
+# En las variables que almacenan numeros hay dos tipos principales:
+	los numeros enteros (llamados int)
+	los decimales o reales (llamados float)
+
+# A las variables que almacenan texto se les denomina stings(str), es muy importante que el contenido a almacenar en este tipo de variables, se encuentre entre comillas. Ya que Python, interpretara que se trata de un texto cuando el dato  a almacenar se encuentra entre comillas.
+
+	"Hola Mundo"
