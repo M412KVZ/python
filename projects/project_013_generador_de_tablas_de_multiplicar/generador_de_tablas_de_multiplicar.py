@@ -16,25 +16,62 @@
 
 import time  # v1.1.1 se agrega el modulo time para gestion de tiempos
 
-print("\033[;32m" + "\nBienvenido al Generador de Tablas de Multiplicar" + "\033[0;m")  # v1.1.1 se agrego un titulo, v1.1.2
+# Definiendo la función menu
+def menu():
+    print("\033[;32m" + "\nBienvenido al Generador de Tablas de Multiplicar" + "\033[0;m")  # v1.1.1 se agrego un titulo, v1.1.2
+    print("\n¿Que desea Hacer?")
+    print("\n[1] Generar Tabla")
+    print("[2] Salir")
+    global hacer
+    hacer = input()
+    hacer = int(hacer)
+    if (hacer == 1):
+        tabla()
+    elif (hacer == 2):
+        print("Saliendo...")
+        time.sleep(1)
+        exit
+    else:
+        print("\nLa opcionque elegiste no es correcta")
+        menu()
 
-numero = int(input("\033[;33m" + "\nIntroduce un numero entero:" + " \033[0;m"))  # introducir cualquier numero para generar la tabla, v1.1.2
+# Definiendo la Función Tabla
+def tabla():
+    numero = int(input("\033[;33m" + "\nIntroduce un numero entero:" + " \033[0;m"))  # introducir cualquier numero para generar la tabla, v1.1.2
 
-numero_inicio = int(input("\nIntroduce el numero de inicio de la Tabla: "))  # v1.1.1 introducir cualquier numero entero desde el que se quiere iniciar la tabla
+    numero_inicio = int(input("\nIntroduce el numero de inicio de la Tabla: "))  # v1.1.1 introducir cualquier numero entero desde el que se quiere iniciar la tabla
 
-numero_final = int(input("\nIntroduce el numero final de la Tabla: "))  # v1.1.1 introducir cualquier numero entero hasta el que se quiere generar la tabla
+    numero_final = int(input("\nIntroduce el numero final de la Tabla: "))  # v1.1.1 introducir cualquier numero entero hasta el que se quiere generar la tabla
 
-print("\033[;36m" + "\nGenerando Tabla..." + "\033[0;m\n")  # v1.1.1 titulo, v1.1.2
+    print("\033[;36m" + "\nGenerando Tabla..." + "\033[0;m\n")  # v1.1.1 titulo, v1.1.2
 
-time.sleep(2)  # v1.1.1 tempo de retraso 2 segundos
+    time.sleep(2)  # v1.1.1 tempo de retraso 2 segundos
 
-for i in range(numero_inicio,numero_final+1):  # codigo para la generacion de la tabla v1.1.1 cambio de nombre de las variables
-    time.sleep(.2)  # v1.1.1 tiempo de retraso entre la generacion de un resultado y otro
-    resultado = i * numero  # generación del cálculo
-    print(("%d x %d = %d") % (numero, i, resultado))  # impresión del resultado 
+    for i in range(numero_inicio,numero_final+1):  # codigo para la generacion de la tabla v1.1.1 cambio de nombre de las variables
+        time.sleep(.2)  # v1.1.1 tiempo de retraso entre la generacion de un resultado y otro
+        resultado = i * numero  # generación del cálculo
+        print(("%d x %d = %d") % (numero, i, resultado))  # impresión del resultado 
 
-print("\033[;35m" + "\nTabla Generada... saliendo del programa" + "\033[0;m\n")  # v1.1.1 mensaje de termino y salida del programa, v1.1.2
+    print("\033[;35m" + "\nTabla Generada..." + "\033[0;m\n")  # v1.1.1 mensaje de termino y salida del programa, v1.1.2
+    pregunta_1()
 
-time.sleep(2)  # v1.1.1 tiempo de espera antes de salir del programa
+def pregunta_1():
+    print("¿Desea generar otra Tabla?\n")
+    print("[1] Si")
+    print("[2] No, Salir")
+    global pregunta_3
+    pregunta_3 = input()
+    pregunta_3 = int(pregunta_3)
+    if (pregunta_3 == 1):
+        tabla()
+    elif (pregunta_3 == 2):
+        print("Saliendo...")
+        time.sleep(2)
+        exit
+    else:
+        print("\nLa opcionque elegiste no es correcta")
+        pregunta_1()
 
+# Llamando a la funcion menu 
+menu()
 # ----- Fin -----
