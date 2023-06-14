@@ -3,7 +3,7 @@
 # author: MasterHeheGar
 # links: https://www.youtube.com/watch?v=_fiY9P-lPEc
 # modificacion y mejora: glow 
-# date: wsun/11/jun/2023
+# date: sun/11/jun/2023
 # description: conversor de divisas
 # v1.1.0 creación del archivo
 
