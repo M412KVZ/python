@@ -57,7 +57,7 @@ def tabla():
 def pregunta():  # definiendo la función pregunta v1.1.3
     print("\033[;34m" + "\n¿Desea generar otra Tabla?\n" + "\033[0;m")
     print("\033[;35m" + "[1] " + "\033[0;m" + "Si")
-    print("\033[;35m" + "[2] " + "\033[0;m" +  "No, Salir")
+    print("\033[;35m" + "[2] " + "\033[0;m" + "No, Salir")
     global pregunta1
     pregunta1 = int(input("\033[;34m" + "\nPor favor elija una opción: " + "\033[0;m"))
     if (pregunta1 == 1):
@@ -67,7 +67,7 @@ def pregunta():  # definiendo la función pregunta v1.1.3
         time.sleep(1)  # tiempo de espera antes de salir del programa
         exit
     else:
-        print("\033[;31m" + "\nLa opcionque elegiste no es correcta" + "\033[;0m")  # v1.1.2, v1.1.3
+        print("\033[;31m" + "\nLa opcion que elegiste no es correcta" + "\033[;0m")  # v1.1.2, v1.1.3
         pregunta()
 
 # Llamando a la funcion menu 
