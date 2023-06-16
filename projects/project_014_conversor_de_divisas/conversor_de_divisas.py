@@ -7,6 +7,8 @@
 # description: conversor de divisas
 # v1.1.0 creación del archivo
 
+# pendiente agrgar tipo de cambio de dolares a mxn etc.
+
 # ----- Inicio -----
 
 def menu():
@@ -15,11 +17,11 @@ def menu():
     pesos = input()
     pesos = float(pesos)
     print("Que tipo de cambio deseas realizar")
-    print("[1] Dólar")
-    print("[2] Dólar Canadiense")
-    print("[3] Euro")
-    print("[4] Libra Esterlina")
-    print("[5] Centenario")
+    print("[1] MXN --> Dólar")
+    print("[2] MXN --> Dólar Canadiense")
+    print("[3] MXN --> Euro")
+    print("[4] MXN --> Libra Esterlina")
+    print("[5] MXn --> Centenario")
     
     global cambio
     cambio = input()
