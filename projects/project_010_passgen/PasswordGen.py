@@ -1,8 +1,8 @@
 #! python3
 # -*- coding: utf-8 -*-
-# author: 
-# links: 
-# modificacion y mejora: glow 
+# author:
+# links:
+# modificacion y mejora: glow
 # date: wed/14/jun/2023
 # description: generador de contraseñas
 # v1.1.0 creación del archivo y codigo de inicio
@@ -28,10 +28,11 @@ def menu():
         print("\033[;36m" + "\nExiting..." + " \033[0;m")
         time.sleep(1)  # tiempo de espera antes de salir
         exit
-    else:  # 
+    else:  #
         print("\033[;31m" + "\nWrong option, please try again" + "\033[;0m")
         menu()  # llamando a la función menu
 
+# definiendo la funcion passgen
 
 def passgen():
 
